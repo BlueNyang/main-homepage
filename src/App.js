@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           </p>
         </header>
       </div>
+      <Footer />
     </>
   );
 }

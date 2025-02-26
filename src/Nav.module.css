@@ -1,0 +1,24 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--background);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  font-family: 'SourGummy';
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
