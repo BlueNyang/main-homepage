@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import MainCat from "./CatImg";
 
 function App() {
   return (
@@ -8,11 +9,7 @@ function App() {
       <Header />
       <Nav />
       <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-        </header>
+        <MainCat />
       </div>
       <Footer />
     </>

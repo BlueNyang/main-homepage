@@ -1,19 +1,26 @@
 nav {
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0;
   background-color: var(--background);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 1rem 0;
 }
 
 nav ul {
   display: flex;
+  flex-direction: row;
   list-style: none;
+  padding: 0;
+  width: 100vw;
+  justify-content: space-evenly;
+  scrollbar-width: none;
 }
 
 nav ul li {
-  margin-right: 1rem;
+  margin: 0 1rem;
 }
 
 nav ul li a {
