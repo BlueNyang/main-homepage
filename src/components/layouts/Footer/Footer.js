@@ -7,7 +7,7 @@ const Footer = () => {
       <div>
         <div>
           <div className="contacts">
-            <h2>Contacts</h2>
+            <h4>BlueNyang</h4>
             Name: GyuTae Ahn
             <br />
             Email:

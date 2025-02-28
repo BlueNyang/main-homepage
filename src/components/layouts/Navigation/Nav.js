@@ -1,9 +1,10 @@
+import React from 'react';
 import './Nav.module.css';
 
 const Nav = () => {
   return (
     <nav>
-      <ul>
+      <ul className="margin-vertical font-small">
         <li>
           <a href=".">Home</a>
         </li>

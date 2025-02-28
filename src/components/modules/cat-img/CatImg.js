@@ -1,8 +1,8 @@
+import { React, useEffect, useState, useRef } from 'react';
 import BlueNyang from './img/BlueNyang.png';
 import LeftEye from './img/BlueNyang-Eyes-Left.png';
 import RightEye from './img/BlueNyang-Eyes-Right.png';
 import CatImgCSS from './CatImg.module.css';
-import { useEffect, useState, useRef } from 'react';
 
 const CalculateEyePos = (clientPos, divCenterPos, InitPos, radius) => {
   const dx = clientPos.x - divCenterPos.x;
@@ -85,35 +85,33 @@ const MainCat = () => {
   }, []);
 
   return (
-    <>
-      <div ref={CatRef} className={CatImgCSS.BlueNyang}>
-        <img className={CatImgCSS.MainCat} src={BlueNyang} alt="BlueNyang" />
+    <div ref={CatRef} className={CatImgCSS.BlueNyang}>
+      <img className={CatImgCSS.MainCat} src={BlueNyang} alt="BlueNyang" />
 
-        <div className={CatImgCSS.Eyes}>
-          <div className={CatImgCSS.LeftEye} ref={leftEyeDiv}>
-            <img
-              src={LeftEye}
-              ref={leftEyeImg}
-              style={{
-                transform: `translate(${leftEyePos.x}px, ${leftEyePos.y}px)`,
-              }}
-              alt="LeftEye"
-            />
-          </div>
+      <div className={CatImgCSS.Eyes}>
+        <div className={CatImgCSS.LeftEye} ref={leftEyeDiv}>
+          <img
+            src={LeftEye}
+            ref={leftEyeImg}
+            style={{
+              transform: `translate(${leftEyePos.x}px, ${leftEyePos.y}px)`,
+            }}
+            alt="LeftEye"
+          />
+        </div>
 
-          <div className={CatImgCSS.RightEye} ref={rightEyeDiv}>
-            <img
-              src={RightEye}
-              ref={rightEyeImg}
-              style={{
-                transform: `translate(${rightEyePos.x}px, ${rightEyePos.y}px)`,
-              }}
-              alt="RightEye"
-            />
-          </div>
+        <div className={CatImgCSS.RightEye} ref={rightEyeDiv}>
+          <img
+            src={RightEye}
+            ref={rightEyeImg}
+            style={{
+              transform: `translate(${rightEyePos.x}px, ${rightEyePos.y}px)`,
+            }}
+            alt="RightEye"
+          />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

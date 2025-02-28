@@ -18,14 +18,3 @@ nav ul {
   justify-content: space-evenly;
   scrollbar-width: none;
 }
-
-nav ul li {
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  font-family: 'SourGummy';
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: var(--text-color);
-}
