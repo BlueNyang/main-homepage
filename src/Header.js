@@ -1,13 +1,14 @@
-import headercss from "./Header.module.css";
-import Theme from "./Theme";
-
+import headercss from './Header.module.css';
+import Theme from './Theme';
 
 const Header = () => {
   return (
     <header>
       <div className={headercss.menu}>
         <ul>
-          <li><Theme /></li>
+          <li>
+            <Theme />
+          </li>
         </ul>
       </div>
       <h1 className={headercss.logo}>
@@ -15,6 +16,6 @@ const Header = () => {
       </h1>
     </header>
   );
-}
+};
 
 export default Header;

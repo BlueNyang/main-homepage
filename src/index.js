@@ -6,6 +6,4 @@ import './font/Font.css';
 import './color/Color.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <App />
-);
+root.render(<App />);

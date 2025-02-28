@@ -1,7 +1,7 @@
-import Header from "./Header";
-import Nav from "./Nav";
-import Footer from "./Footer";
-import MainCat from "./CatImg";
+import Header from './Header';
+import Nav from './Nav';
+import Footer from './Footer';
+import MainCat from './CatImg';
 
 function App() {
   return (

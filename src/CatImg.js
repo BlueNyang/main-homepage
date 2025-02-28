@@ -12,7 +12,7 @@ const CalculateEyePos = (clientPos, divCenterPos, InitPos, radius) => {
   const y = Math.sin(angle) * radius + InitPos.y;
 
   return { x, y };
-}
+};
 
 const MainCat = () => {
   const [leftEyePos, setLeftEyePos] = useState({ x: 0, y: 0 });
@@ -32,26 +32,49 @@ const MainCat = () => {
       const leftEyeImgRect = leftEyeImg.current.getBoundingClientRect();
 
       const leftEyeInitPos = {
-        x: (leftEyeDivRect.width - leftEyeImgRect.width) / 2 + (CatRect.width * 0.0025),
-        y: (leftEyeDivRect.height - leftEyeImgRect.height) / 2 - (CatRect.height * 0.006)
-      }
+        x:
+          (leftEyeDivRect.width - leftEyeImgRect.width) / 2 +
+          CatRect.width * 0.0025,
+        y:
+          (leftEyeDivRect.height - leftEyeImgRect.height) / 2 -
+          CatRect.height * 0.006,
+      };
 
       const rightEyeDivRect = rightEyeDiv.current.getBoundingClientRect();
       const rightEyeImgRect = rightEyeImg.current.getBoundingClientRect();
 
       const rightEyeInitPos = {
-        x: (rightEyeDivRect.width - rightEyeImgRect.width) / 2 - (CatRect.width * 0.0025),
-        y: (rightEyeDivRect.height - rightEyeImgRect.height) / 2 + (CatRect.height * 0.0055)
-      }
+        x:
+          (rightEyeDivRect.width - rightEyeImgRect.width) / 2 -
+          CatRect.width * 0.0025,
+        y:
+          (rightEyeDivRect.height - rightEyeImgRect.height) / 2 +
+          CatRect.height * 0.0055,
+      };
 
       const radius = CatRect.width * 0.003;
 
-      const newLeftEyePos = CalculateEyePos({ x: e.clientX, y: e.clientY }, { x: leftEyeDivRect.x + leftEyeDivRect.width / 2, y: leftEyeDivRect.y + leftEyeDivRect.height / 2 }, leftEyeInitPos , radius);
-      const newRightEyePos = CalculateEyePos({ x: e.clientX, y: e.clientY }, { x: rightEyeDivRect.x + rightEyeDivRect.width / 2, y: rightEyeDivRect.y + rightEyeDivRect.height / 2 }, rightEyeInitPos, radius);
+      const newLeftEyePos = CalculateEyePos(
+        { x: e.clientX, y: e.clientY },
+        {
+          x: leftEyeDivRect.x + leftEyeDivRect.width / 2,
+          y: leftEyeDivRect.y + leftEyeDivRect.height / 2,
+        },
+        leftEyeInitPos,
+        radius,
+      );
+      const newRightEyePos = CalculateEyePos(
+        { x: e.clientX, y: e.clientY },
+        {
+          x: rightEyeDivRect.x + rightEyeDivRect.width / 2,
+          y: rightEyeDivRect.y + rightEyeDivRect.height / 2,
+        },
+        rightEyeInitPos,
+        radius,
+      );
 
-      setLeftEyePos({x: newLeftEyePos.x, y: newLeftEyePos.y});
-      setRightEyePos({x: newRightEyePos.x, y: newRightEyePos.y});
-
+      setLeftEyePos({ x: newLeftEyePos.x, y: newLeftEyePos.y });
+      setRightEyePos({ x: newRightEyePos.x, y: newRightEyePos.y });
     };
 
     window.addEventListener('mousemove', handleMouseMove);
@@ -68,17 +91,30 @@ const MainCat = () => {
 
         <div className={CatImgCSS.Eyes}>
           <div className={CatImgCSS.LeftEye} ref={leftEyeDiv}>
-            <img src={LeftEye} ref={leftEyeImg} style={{ transform: `translate(${leftEyePos.x}px, ${leftEyePos.y}px)`}} alt="LeftEye" />
+            <img
+              src={LeftEye}
+              ref={leftEyeImg}
+              style={{
+                transform: `translate(${leftEyePos.x}px, ${leftEyePos.y}px)`,
+              }}
+              alt="LeftEye"
+            />
           </div>
 
           <div className={CatImgCSS.RightEye} ref={rightEyeDiv}>
-            <img src={RightEye} ref={rightEyeImg} style={{ transform: `translate(${rightEyePos.x}px, ${rightEyePos.y}px)`}} alt="RightEye" />
+            <img
+              src={RightEye}
+              ref={rightEyeImg}
+              style={{
+                transform: `translate(${rightEyePos.x}px, ${rightEyePos.y}px)`,
+              }}
+              alt="RightEye"
+            />
           </div>
         </div>
-
       </div>
     </>
   );
-}
+};
 
 export default MainCat;

@@ -1,11 +1,25 @@
-import './Footer.module.css'
+import React from 'react';
+import './Footer.module.css';
 
 const Footer = () => {
-    return (
-        <footer>
-            <p>Footer</p>
-        </footer>
-    )
-}
+  return (
+    <footer>
+      <div>
+        <div>
+          <div className="contacts">
+            <h2>Contacts</h2>
+            Name: GyuTae Ahn
+            <br />
+            Email:
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;xpsj20@bluenyang.kr
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;xpsj20@gmail.com
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;
