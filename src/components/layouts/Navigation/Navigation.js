@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import Theme from '../../modules/change-theme/Theme';
 
 const Navigation = () => {
   return (
@@ -27,6 +28,8 @@ const Navigation = () => {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
+
+            <Theme />
           </Nav>
         </Navbar.Collapse>
       </Container>
