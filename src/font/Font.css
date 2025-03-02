@@ -13,3 +13,15 @@
   font-family: "SourGummy-Italic";
   src: url("./SourGummy-Italic-VariableFont_wdth,wght.ttf")
 }
+
+.font-pacifico {
+  font-family: "Pacifico";
+}
+
+.font-sour-gummy {
+  font-family: "SourGummy";
+}
+
+.font-sour-gummy-italic {
+  font-family: "SourGummy-Italic";
+}

@@ -1,7 +1,7 @@
 import { React, useEffect, useState, useRef } from 'react';
-import BlueNyang from './img/BlueNyang.png';
-import LeftEye from './img/BlueNyang-Eyes-Left.png';
-import RightEye from './img/BlueNyang-Eyes-Right.png';
+import BlueNyang from '../../../img/BlueNyang.png';
+import LeftEye from '../../../img/BlueNyang-Eyes-Left.png';
+import RightEye from '../../../img/BlueNyang-Eyes-Right.png';
 import CatImgCSS from './CatImg.module.css';
 
 const CalculateEyePos = (clientPos, divCenterPos, InitPos, radius) => {
