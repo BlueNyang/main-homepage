@@ -1,7 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import { BsBrightnessHighFill, BsFillMoonFill } from 'react-icons/bs';
 import PropTypes from 'prop-types';
-import ThemeCSS from './Theme.module.css';
 
 const THEME_ATTR = 'data-bs-theme';
 const DARK_THEME = 'dark';
@@ -32,7 +31,7 @@ const Theme = ({ className, iconSize }) => {
             changeTheme(LIGHT_THEME);
           }
         }}
-        className={ThemeCSS.SelectorBtn}
+        className='border border-0 bg-transparent'
       >
         {theme === LIGHT_THEME ? (
           <BsFillMoonFill size={`${iconSize}`} />
