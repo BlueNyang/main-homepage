@@ -26,10 +26,10 @@ const Navigation = () => {
           className={`justify-content-center w-100 ${windowWidth < 992 ? 'order-1' : ''}`}
         >
           <Nav className='justify-content-between w-75 mx-5'>
-            <Nav.Link href='#home'>Home</Nav.Link>
-            <Nav.Link href='#link'>About</Nav.Link>
-            <Nav.Link href='#link'>Team Croffle</Nav.Link>
-            <Nav.Link href='#link'>File Share</Nav.Link>
+            <Nav.Link href='./'>Home</Nav.Link>
+            <Nav.Link href='./'>About</Nav.Link>
+            <Nav.Link href='./'>Team Croffle</Nav.Link>
+            <Nav.Link href='./pub'>File Share</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <Theme className='d-flex justify-content-end me-5' iconSize='1.3rem' />
