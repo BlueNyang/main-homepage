@@ -14,14 +14,23 @@
   src: url("./SourGummy-Italic-VariableFont_wdth,wght.ttf")
 }
 
+@font-face {
+  font-family: "Jua";
+  src: url("./Jua-Regular.ttf")
+}
+
 .font-pacifico {
-  font-family: "Pacifico";
+  font-family: "Pacifico" !important;
 }
 
 .font-sour-gummy {
-  font-family: "SourGummy";
+  font-family: "SourGummy" !important;
 }
 
 .font-sour-gummy-italic {
-  font-family: "SourGummy-Italic";
+  font-family: "SourGummy-Italic" !important;
+}
+
+.font-jua {
+  font-family: "Jua" !important;
 }

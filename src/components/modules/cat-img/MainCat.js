@@ -1,8 +1,9 @@
 import { React, useEffect, useState, useRef } from 'react';
+import BlueNyangStatic from '../../../img/BlueNyang-Static.jpg';
 import BlueNyang from '../../../img/BlueNyang.png';
 import LeftEye from '../../../img/BlueNyang-Eyes-Left.png';
 import RightEye from '../../../img/BlueNyang-Eyes-Right.png';
-import CatImgCSS from './CatImg.module.css';
+import MainCatCSS from './MainCat.module.css';
 
 const CalculateEyePos = (clientPos, divCenterPos, InitPos, radius) => {
   const dx = clientPos.x - divCenterPos.x;
@@ -14,7 +15,7 @@ const CalculateEyePos = (clientPos, divCenterPos, InitPos, radius) => {
   return { x, y };
 };
 
-const MainCat = () => {
+const MainCatDynamic = () => {
   const [leftEyePos, setLeftEyePos] = useState({ x: 0, y: 0 });
   const [rightEyePos, setRightEyePos] = useState({ x: 0, y: 0 });
 
@@ -85,34 +86,64 @@ const MainCat = () => {
   }, []);
 
   return (
-    <div ref={CatRef} className={CatImgCSS.BlueNyang}>
-      <img className={CatImgCSS.MainCat} src={BlueNyang} alt="BlueNyang" />
+    <div ref={CatRef} className={MainCatCSS.BlueNyang}>
+      <img className={MainCatCSS.MainCat} src={BlueNyang} alt='BlueNyang' />
 
-      <div className={CatImgCSS.Eyes}>
-        <div className={CatImgCSS.LeftEye} ref={leftEyeDiv}>
+      <div className={MainCatCSS.Eyes}>
+        <div className={MainCatCSS.LeftEye} ref={leftEyeDiv}>
           <img
             src={LeftEye}
             ref={leftEyeImg}
             style={{
               transform: `translate(${leftEyePos.x}px, ${leftEyePos.y}px)`,
             }}
-            alt="LeftEye"
+            alt='LeftEye'
           />
         </div>
 
-        <div className={CatImgCSS.RightEye} ref={rightEyeDiv}>
+        <div className={MainCatCSS.RightEye} ref={rightEyeDiv}>
           <img
             src={RightEye}
             ref={rightEyeImg}
             style={{
               transform: `translate(${rightEyePos.x}px, ${rightEyePos.y}px)`,
             }}
-            alt="RightEye"
+            alt='RightEye'
           />
         </div>
       </div>
     </div>
   );
+};
+
+const MainCatStatic = () => {
+  return (
+    <div className={MainCatCSS.BlueNyang}>
+      <img
+        className={MainCatCSS.MainCat}
+        src={BlueNyangStatic}
+        alt='BlueNyang'
+      />
+    </div>
+  );
+};
+
+const MainCat = () => {
+  const [isDynamic, setIsDynamic] = useState(false);
+
+  const handleMouseMove = () => {
+    setIsDynamic(true);
+    document.removeEventListener('mouseenter', handleMouseMove);
+  };
+
+  useEffect(() => {
+    document.addEventListener('mouseenter', handleMouseMove);
+
+    return () => {
+      document.removeEventListener('mouseenter', handleMouseMove);
+    };
+  });
+  return isDynamic ? <MainCatDynamic /> : <MainCatStatic />;
 };
 
 export default MainCat;
