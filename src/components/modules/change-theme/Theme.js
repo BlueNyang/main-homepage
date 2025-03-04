@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from 'react';
 import ThemeCSS from './Theme.module.css';
 
-const THEME_ATTR = 'color-theme';
+const THEME_ATTR = 'data-bs-theme';
 const DARK_THEME = 'dark';
 const LIGHT_THEME = 'light';
 const LightIcon = () => {
@@ -56,7 +56,7 @@ const DarkIcon = () => {
   );
 };
 
-const Theme = () => {
+const Theme = (className) => {
   const [theme, setTheme] = useState(
     localStorage.getItem(THEME_ATTR) || LIGHT_THEME,
   );
@@ -71,7 +71,7 @@ const Theme = () => {
   }, [theme]);
 
   return (
-    <div className="themeSelector">
+    <div className={`themeSelector ${className}`}>
       <button
         type="button"
         onClick={() => {

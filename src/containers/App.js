@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <Navigation />
-      <div className="App bg-dark">
+      <div className="App">
         <MainCat />
       </div>
       <Footer />
