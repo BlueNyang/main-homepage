@@ -46,13 +46,13 @@ onMounted(() => {
         Ratio.value = imgW.value / ORIGIN_WIDTH;
 
         leftPos.value = {
-          x: LEFT_RATIO_POS.x * imgW.value,
-          y: LEFT_RATIO_POS.y * imgH.value,
+          x: LEFT_RATIO_POS.x * imgW.value + 11,
+          y: LEFT_RATIO_POS.y * imgH.value - 2,
         };
 
         rightPos.value = {
-          x: RIGHT_RATIO_POS.x * imgW.value,
-          y: RIGHT_RATIO_POS.y * imgH.value,
+          x: RIGHT_RATIO_POS.x * imgW.value - 12,
+          y: RIGHT_RATIO_POS.y * imgH.value - 1,
         };
       }
     });
