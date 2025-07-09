@@ -11,12 +11,14 @@ const menuItems = MenuList as Item[];
 </script>
 
 <template>
-  <ul class="flex items-center space-x-4 hidden lg:flex font-[Jua] text-lg">
+  <ul
+    class="flex items-center space-x-4 hidden lg:flex font-[Sour_Gummy] text-lg"
+  >
     <li v-for="menuItem in menuItems" :key="menuItem.name">
       <a
         :href="menuItem.path"
         :target="menuItem.isBlank ? '_blank' : '_self'"
-        class="block px-4 py-5 text-gray-700 dark:text-gray-300 hover:text-sky-600 font-medium dark:hover:text-sky-400 transition-colors duration-300"
+        class="block px-4 py-5 text-gray-700 dark:text-gray-300 hover:text-sky-600 font-medium dark:hover:text-sky-400 hover:-translate-y-1 transition-all duration-300"
       >
         {{ menuItem.name }}
       </a>
