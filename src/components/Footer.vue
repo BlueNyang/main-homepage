@@ -1,6 +1,9 @@
 <template>
-  <footer class="flex justify-center items-center w-4/5 mx-auto flex-col pt-4">
-    <div class="flex w-full h-28 gap-x-4 font-[Jua]">
+  <footer
+    class="flex relative justify-center items-center w-4/5 mx-auto flex-col pt-4"
+  >
+    <div class="h-15 w-full absolute top-0 z-10"></div>
+    <div class="flex w-full h-28 gap-x-4 font-[Jua] z-20">
       <div class="flex-1 flex justify-center items-center">
         <div class="w-fit">
           <p>BlueNyang</p>
@@ -23,7 +26,7 @@
             width="32"
             height="32"
             fill="currentColor"
-            class="bi bi-github"
+            class="bi bi-github hover:fill-sky-300 dark:hover:fill-sky-400 transition-all duration-400 hover:-translate-y-1"
             viewBox="0 0 16 16"
           >
             <path
@@ -42,7 +45,7 @@
             width="32"
             height="32"
             fill="currentColor"
-            class="bi bi-instagram"
+            class="bi bi-instagram hover:fill-sky-300 dark:hover:fill-sky-400 transition-all duration-400 hover:-translate-y-1"
             viewBox="0 0 16 16"
           >
             <path
@@ -62,6 +65,7 @@
             fill="currentColor"
             width="32"
             height="32"
+            class="hover:fill-sky-300 dark:hover:fill-sky-400 transition-all duration-400 hover:-translate-y-1"
           >
             <title>티스토리 로고</title>
             <g>
@@ -82,7 +86,7 @@
             width="32"
             height="32"
             fill="currentColor"
-            class="bi bi-cloud-arrow-down-fill"
+            class="bi bi-cloud-arrow-down-fill hover:fill-sky-300 dark:hover:fill-sky-400 transition-all duration-400 hover:-translate-y-1"
             viewBox="0 0 16 16"
           >
             <path

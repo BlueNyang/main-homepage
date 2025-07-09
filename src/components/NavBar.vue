@@ -15,9 +15,15 @@ import ThemeToggler from './ThemeToggler.vue';
       <!-- Left Side: Offcanvas Button and logo -->
       <div class="flex items-center gap-x-4 ml-4">
         <SidebarToggler />
-        <div class="flex lg:flex-1 py-5">
+        <div
+          class="flex lg:flex-1 py-5 hover:scale-105 transition-transform duration-500"
+        >
           <a href="/" class="-m-1.5 p-1.5">
-            <span class="text-2xl font-[Pacifico] font-bold">BlueNyang</span>
+            <span
+              class="text-2xl font-[Pacifico] font-bold hover:text-sky-600 dark:hover:text-sky-400 transition-colors duration-500"
+            >
+              BlueNyang
+            </span>
           </a>
         </div>
       </div>
