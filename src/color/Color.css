@@ -1,9 +1,0 @@
-:root[color-theme='dark'] {
-  --background: #333;
-  --text-color: #fff;
-}
-
-:root[color-theme='light'] {
-  --background: #fff;
-  --text-color: #333;
-}
