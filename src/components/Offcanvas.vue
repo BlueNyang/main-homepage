@@ -30,14 +30,13 @@ const menuItems = MenuList as Item[];
       <button
         type="button"
         id="sidebar-close-btn"
-        class="btn-close"
         data-bs-dismiss="offcanvas"
         aria-label="Close"
         @click="toggleSidebar"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 fill-gray-600 dark:fill-gray-300"
+          class="h-6 w-6 fill-gray-600 dark:fill-gray-300 hover:stroke-sky-300 dark:hover:stroke-sky-400 transition-all duration-400 hover:scale-120"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -59,7 +58,7 @@ const menuItems = MenuList as Item[];
           <a
             :href="menuItem.path"
             :target="menuItem.isBlank ? '_blank' : '_self'"
-            class="block px-4 py-5 text-gray-700 dark:text-gray-300 hover:text-sky-600 font-medium dark:hover:text-sky-400 transition-colors duration-300"
+            class="block px-4 py-5 text-gray-700 dark:text-gray-300 hover:text-sky-600 font-medium dark:hover:text-sky-400 hover:-translate-y-1 transition-all duration-300"
           >
             {{ menuItem.name }}
           </a>
