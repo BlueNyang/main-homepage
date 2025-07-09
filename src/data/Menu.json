@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Home",
+    "path": "/",
+    "isBlank": false
+  },
+  {
+    "name": "About",
+    "path": "/about",
+    "isBlank": false
+  },
+  {
+    "name": "Blog",
+    "path": "https://bluenyang-dev.tistory.com/",
+    "isBlank": true
+  },
+  {
+    "name": "Croffle Dev.",
+    "path": "https://github.com/Team-Croffle/",
+    "isBlank": true
+  },
+  {
+    "name": "Downloads",
+    "path": "https://dl.bluenyang.kr/",
+    "isBlank": true
+  }
+]
