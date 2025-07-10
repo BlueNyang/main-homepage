@@ -1,9 +1,11 @@
 <template>
   <footer
-    class="flex relative justify-center items-center w-4/5 mx-auto flex-col pt-4"
+    class="flex relative justify-center items-center w-4/5 mx-auto flex-col pt-4 transition-all duration-500"
   >
     <div class="h-15 w-full absolute top-0 z-10"></div>
-    <div class="flex w-full h-28 gap-x-4 font-[Jua] z-20">
+    <div
+      class="flex w-full gap-4 font-[Jua] z-20 lg:flex-row sm:flex-row flex-col mb-4"
+    >
       <div class="flex-1 flex justify-center items-center">
         <div class="w-fit">
           <p>BlueNyang</p>
@@ -14,19 +16,19 @@
           </ul>
         </div>
       </div>
-      <div class="flex flex-1 h-full justify-evenly flex-row">
+      <div class="flex flex-1 h-full justify-evenly items-center flex-row">
         <a
           href="https://github.com/BlueNyang"
           target="_blank"
           rel="noreferrer"
-          class="flex items-center"
+          class="flex items-center justify-center h-fit"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="32"
             fill="currentColor"
-            class="bi bi-github hover:fill-sky-300 dark:hover:fill-sky-400 transition-all duration-400 hover:-translate-y-1"
+            class="bi bi-github fill-black dark:fill-white hover:fill-sky-300 dark:hover:fill-sky-400 transition-all duration-500 hover:-translate-y-1"
             viewBox="0 0 16 16"
           >
             <path
@@ -38,14 +40,14 @@
           href="https://www.instagram.com/bluenyang2251/"
           target="_blank"
           rel="noreferrer"
-          class="flex items-center"
+          class="flex items-center justify-center h-fit"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="32"
             fill="currentColor"
-            class="bi bi-instagram hover:fill-sky-300 dark:hover:fill-sky-400 transition-all duration-400 hover:-translate-y-1"
+            class="bi bi-instagram fill-black dark:fill-white hover:fill-sky-300 dark:hover:fill-sky-400 transition-all duration-400 hover:-translate-y-1"
             viewBox="0 0 16 16"
           >
             <path
@@ -57,7 +59,7 @@
           href="https://bluenyang-dev.tistory.com/"
           target="_blank"
           rel="noreferrer"
-          class="flex items-center"
+          class="flex items-center justify-center h-fit"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +67,7 @@
             fill="currentColor"
             width="32"
             height="32"
-            class="hover:fill-sky-300 dark:hover:fill-sky-400 transition-all duration-400 hover:-translate-y-1"
+            class="fill-black dark:fill-white hover:fill-sky-300 dark:hover:fill-sky-400 transition-all duration-400 hover:-translate-y-1"
           >
             <title>티스토리 로고</title>
             <g>
@@ -79,14 +81,14 @@
           href="https://download.bluenyang.kr/"
           target="_blank"
           rel="noreferrer"
-          class="flex items-center"
+          class="flex items-center justify-center h-fit"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="32"
             fill="currentColor"
-            class="bi bi-cloud-arrow-down-fill hover:fill-sky-300 dark:hover:fill-sky-400 transition-all duration-400 hover:-translate-y-1"
+            class="bi bi-cloud-arrow-down-fill fill-black dark:fill-white hover:fill-sky-300 dark:hover:fill-sky-400 transition-all duration-400 hover:-translate-y-1"
             viewBox="0 0 16 16"
           >
             <path
