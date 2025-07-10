@@ -20,7 +20,7 @@ import ThemeToggler from './ThemeToggler.vue';
         >
           <a href="/" class="-m-1.5 p-1.5">
             <span
-              class="text-2xl font-[Pacifico] font-bold hover:text-sky-600 dark:hover:text-sky-400 transition-colors duration-500"
+              class="text-2xl font-[Pacifico] font-bold text-black dark:text-white hover:text-sky-600 dark:hover:text-sky-400 transition-colors duration-500"
             >
               BlueNyang
             </span>
