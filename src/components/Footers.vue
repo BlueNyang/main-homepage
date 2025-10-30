@@ -11,8 +11,8 @@
           <p>BlueNyang</p>
           <p>e-Mail:</p>
           <ul class="list-none pl-4 w-fit">
-            <li>xpsj20@gmail.com</li>
-            <li>dksrbxo@mail.bluenyang.kr</li>
+            <li>contact@bluenyang.kr</li>
+            <li>bluenyang@croffledev.kr</li>
           </ul>
         </div>
       </div>
