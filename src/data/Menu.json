@@ -21,7 +21,12 @@
   },
   {
     "name": "Downloads",
-    "path": "https://dl.bluenyang.kr/",
+    "path": "https://ocis.croffledev.kr/s/hTHvjhkcEGwNevm",
+    "isBlank": true
+  },
+  {
+    "name": "Docs",
+    "path": "https://docs.bluenyang.kr/s/public",
     "isBlank": true
   }
 ]
