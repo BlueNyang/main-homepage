@@ -107,8 +107,8 @@
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="56"
-            height="56"
+            width="32"
+            height="32"
             viewBox="0 0 56 56"
           >
             <title>공개 문서 로고</title>
